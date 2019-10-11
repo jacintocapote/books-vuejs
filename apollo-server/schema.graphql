@@ -1,0 +1,25 @@
+"Included scalars"
+scalar JSON
+
+"type Book"
+type Book {
+  id: ID!
+  name: String!
+  isbn: String!
+  intro: String!
+  description: String!
+  author: String!
+  language: String!
+  picture: String!
+  star: Int!
+  year: Int!
+  path: String!
+}
+
+type Query {
+  booksCount: String!
+  getBook(path: String!): Book
+  searchBookTitle(name: String!): [Book]
+  searchBooks(name: String!, author: String!, language: String!, sortBy: String!, offset: Int!): [Book]
+  searchBooksCount(name: String!, author: String!, language: String!): String!
+}
