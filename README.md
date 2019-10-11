@@ -2,7 +2,6 @@
 
 This is a example VUEJS implementing with list books and view book list
 
-```
 ## Libraries
 
 The libraries we used are:
