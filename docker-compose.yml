@@ -1,0 +1,12 @@
+version: '3'
+services:
+  vue-app:
+    build: .
+    command: npm run serve
+    restart: always
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - "8080:8080"
+      - "4000:4000"
